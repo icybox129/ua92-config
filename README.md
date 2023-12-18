@@ -20,7 +20,7 @@ If you wish to use this Terraform config and Bash script yourself, there are a f
 
 - You will need Terraform installed and ideally a AWS profile setup (using the AWS CLI). 
 
-    - If you do not have a AWS profile setup with your AWS credentials, then in the 'variables.tf' file located in the '/environment/dev' folder, uncomment lines 1 and 3 and Terraform will prompt you for your credentials with you apply the configuration.
+    - If you do not have a AWS profile setup with your AWS credentials, then in the 'variables.tf' file located in the '/environment/dev' folder, uncomment lines 1 and 3 and Terraform will prompt you for your credentials when you apply the configuration.
 - You will need your domain (Hosted zone) added to AWS Route 53
     - Once your hosted zone is created, you will need to update the 'r53.tf' file in 'modules/r53'. On line 2, change the 'zone_id' string to your hosted zone ID.
     - While still in the 'r53.tf' file, on line 7, change the string with your desired subdomain (for example my domain is icybox.co.uk and I am creating an A record for the subdomain wp.icybox.co.uk)

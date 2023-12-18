@@ -23,7 +23,7 @@ cd /etc/php/8.1/fpm/pool.d/
 mv www.conf{,.disabled}
 systemctl restart php8.1-fpm.service
 nginx -s reload
-certbot --nginx -d wp.icybox.co.uk <<EOF
+certbot --nginx -d wptest.icybox.co.uk <<EOF
 test@test.com
 y 
 n

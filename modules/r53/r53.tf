@@ -4,7 +4,7 @@ data "aws_route53_zone" "primary" {
 
 resource "aws_route53_record" "wp" {
   zone_id = data.aws_route53_zone.primary.zone_id
-  name    = "wp.icybox.co.uk"
+  name    = "wptest.icybox.co.uk"
   type    = "A"
   ttl     = "60"
   records = [var.public_ip]
