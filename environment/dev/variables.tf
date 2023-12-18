@@ -11,8 +11,3 @@ variable "project_name" {
   type    = string
   default = "ua92-wp"
 }
-
-variable "domain" {
-  type    = string
-  default = "icybox.co.uk"
-}
