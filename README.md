@@ -12,6 +12,8 @@ The Bash script will;
 
 There will be some manual commands to complete the installation, you will find these further down
 
+---
+
 ## Setup
 
 If you wish to use this Terraform config and Bash script yourself, there are a few prerequisites;
@@ -27,6 +29,8 @@ If you wish to use this Terraform config and Bash script yourself, there are a f
     - Updating lines 2, 3 and 11 in the NGINX config file to the relevant values for you
     - Updating lines 1, 2, 3, 4 and 14 in the PHP config file to the relevant values for you
 - Edit the 'user-data.sh' file in the '/modules/network/' directory. Specifically lines 7, 20, 21, 26, 31, 35, 36, 42 and 43. The main edits will be changing the username from 'nick' to whatever you choose and the source of your config files for nginx and php.
+
+---
 
 ## Terraform Commands
 
@@ -44,6 +48,8 @@ Apply the configuration to begin provisioning the infrastructure on AWS
 ```
 terraform apply
 ```
+
+---
 
 ## Commands to complete the setup:
 
@@ -75,6 +81,8 @@ Rename sample config
 ```
 cp -a wp-config-sample.php wp-config.php
 ```
+
+---
 
 ## Bash Script
 
