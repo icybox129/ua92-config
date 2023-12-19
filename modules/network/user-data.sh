@@ -18,7 +18,7 @@ y
 y
 EOF
 wget -P /etc/php/8.1/fpm/pool.d/ https://raw.githubusercontent.com/icybox129/ua92-config/main/wp_icybox_co_uk.conf
-wget -P /etc/nginx/conf.d/ https://raw.githubusercontent.com/icybox129/ua92-config/main/wp.icybox.co.uk.conf
+wget -P /etc/nginx/conf.d/ https://raw.githubusercontent.com/icybox129/ua92-config/main/wptest.icybox.co.uk.conf
 cd /etc/php/8.1/fpm/pool.d/
 mv www.conf{,.disabled}
 systemctl restart php8.1-fpm.service
